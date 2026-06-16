@@ -5,19 +5,10 @@ import java.util.Scanner;
 public class CheckPrime {
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
-		int n = scan.nextInt();
-//		System.out.println(isPrime(n) ? "Prime" : "Not Prime");
-		primeNumbersInRange(n);
-	}
-
-	public static void primeNumbersInRange(int n) {
-		for(int i=1; i<n; i++) {
-			if(isPrime(i)) {
-				System.out.print(i + " ");
-			}
-		}
-	}
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+		System.out.println(isPrime(n) ? "Prime" : "Not Prime");
+    }
 
 	public static boolean isPrime(int n) {
 		if(n<=1) {

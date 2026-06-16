@@ -18,14 +18,13 @@ public class DuplicateElements {
 
 	public static void duplicateElements(int[] ar) {
 		LinkedHashSet<Integer> set = new LinkedHashSet<Integer>();
-		for(int i=0; i<ar[i]; i++) {
-			set.add(ar[i]);
+		LinkedHashSet<Integer> dup = new LinkedHashSet<Integer>();
+		for(int i=0; i<ar.length; i++) {
+            if(!set.add(ar[i])){
+                dup.add(ar[i]);
+            }
 		}
-//		System.out.println(set);
-		for(Integer c : set) {
-			System.out.print(c + " ");
-			
-		}
+		System.out.println(dup);
 		
 	}
 
